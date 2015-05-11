@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+     android:id="@+id/test"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="Test"
+
+    />
+    
+    <Button
+     android:id="@+id/clear"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="Test2"
+     android:layout_toRightOf="@+id/test"
+
+    />
+    
+    <Button
+     android:id="@+id/startWalking"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="Yurumeye Basla"
+     android:layout_toRightOf="@+id/clear"
+
+    />
+    
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.google.android.gms.maps.SupportMapFragment" 
+        android:layout_below="@+id/clear"/>
+    
+  
+</RelativeLayout>
